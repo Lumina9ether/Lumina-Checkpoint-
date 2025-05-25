@@ -36,10 +36,10 @@
       font-size: 2.5rem;
       color: #00ffff;
       text-shadow: 0 0 10px #00ffff, 0 0 20px #8F00FF;
+      margin-bottom: 30px;
       text-align: center;
-      margin: 30px 0;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
       display: inline-block;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
       cursor: pointer;
     }
     .glow-title:hover {
@@ -51,11 +51,12 @@
 <body>
   <div id="orb" class="orb-idle"></div>
 
-  <header>
+  <header class="center">
     <h1 class="glow-title">Lumina Legacy LLC</h1>
   </header>
 
-  <!-- The rest of your HTML remains untouched -->
+  <!-- All other content stays exactly as is! -->
+
   <section class="hero">
     <div class="orb-container">
       <div id="chat-container" style="text-align: center; margin: 30px auto;">
@@ -118,7 +119,36 @@
     <section id="ai-tiers">
       <h2 class="glow-title">Choose Your AI Tier</h2>
       <div class="tier-container">
-        <!-- Tier cards remain unchanged -->
+        <div class="tier-card tier-spark">
+          <h3>🔥 Lumina Spark</h3>
+          <p class="price">$297</p>
+          <ul>
+            <li>Self-paced AI tools</li>
+            <li>Access to Lumina starter logic</li>
+            <li>Basic automation templates</li>
+          </ul>
+          <button class="glow-button" onclick="window.open('https://buy.stripe.com/test_00wfZacRcgHV1SA0W2awo00', '_blank')">Buy Now</button>
+        </div>
+        <div class="tier-card tier-ignite">
+          <h3>⚡ Lumina Ignite</h3>
+          <p class="price">$997</p>
+          <ul>
+            <li>7-day guided AI activation</li>
+            <li>Advanced marketing flows</li>
+            <li>Email & funnel builders included</li>
+          </ul>
+          <button class="glow-button" onclick="window.open('https://buy.stripe.com/test_cNi7sE3gC1N1eFm6gmawo01', '_blank')">Buy Now</button>
+        </div>
+        <div class="tier-card tier-sovereign">
+          <h3>👑 Lumina Sovereign</h3>
+          <p class="price">$2222</p>
+          <ul>
+            <li>Fully done-for-you AI build</li>
+            <li>Custom branding, automation, and sales systems</li>
+            <li>1-on-1 onboarding with team</li>
+          </ul>
+          <button class="glow-button" onclick="window.open('https://buy.stripe.com/test_eVqeV68AWgHV0OwcEKawo02', '_blank')">Buy Now</button>
+        </div>
       </div>
     </section>
 
